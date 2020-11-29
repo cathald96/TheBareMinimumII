@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "741673299557",
+    "firebase_url": "https://the-bare-minimum-ii.firebaseio.com",
+    "project_id": "the-bare-minimum-ii",
+    "storage_bucket": "the-bare-minimum-ii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741673299557:android:eef1956201ac66cba2e08c",
+        "android_client_info": {
+          "package_name": "com.example.thebareminimumii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741673299557-8sj830hhtd8lr4ftjeq79sbcq59akm6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqIixF3hWYI_Fi6dxXsYUOFEwOLYwbMUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741673299557-8sj830hhtd8lr4ftjeq79sbcq59akm6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
