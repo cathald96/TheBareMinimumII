@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:background="@drawable/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/View01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thebareminimumii.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:id="@+id/t0"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Welcome to\nThe Bare Minimum II.\nTap the screen to continue."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/t1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Hi, my name is Cathal Doherty and i developed this app under the supervision of Joseph Duffin for my Final year project. "
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t0" />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="I myself am a Final Year Computer Science student and decided to tackle this project because I struggled with 1st year programming."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/t3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="The app is designed to help with concepts associated with the CS162 module,and inform you of The Bare Minimum Workload to pass 1st-year Computer Science."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Here is a photo of me with the programming learning curve , As you progress through the app I hope your position on the curve progresses."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Well that's all from me. \nTap again to get the continue button and get started learning about CS162."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FF000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/t4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="278dp"
+        android:layout_height="532dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/t4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3"
+        app:srcCompat="@drawable/mise"
+        tools:visibility="invisible" />
+
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Continue"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
