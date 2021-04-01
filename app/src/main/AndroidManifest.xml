@@ -9,8 +9,187 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBareMinimumII">
-        <activity android:name=".WelcomeActivity"></activity>
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".Menu.ScoreActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity android:name=".Questions.QuestionsActivity" />
+        <activity android:name=".Questions.MethodQuestionsActivity" />
+        <activity android:name=".Questions.Method2QuestionsActivity" />
+        <activity android:name=".Questions.RegexQuestionsActivity" />
+        <activity android:name=".Questions.RecursionQuestionsActivity" />
+        <activity android:name=".Questions.FSMQuestionsActivity"/>
+        <activity android:name=".Questions.SortingQuestionsActivity" />
+        <activity android:name=".Questions.ClassesQuestionsActivity" />
+        <activity android:name=".Questions.InheritanceQuestionsActivity" />
+        <activity android:name=".Questions.TMQuestionsActivity" />
+        <activity
+            android:name=".Menu.IntroductionActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Intro1"
+            android:parentActivityName=".Menu.IntroductionActivity" />
+        <activity
+            android:name=".Lessons.Intro2"
+            android:parentActivityName=".Menu.IntroductionActivity" />
+        <activity
+            android:name=".Lessons.Intro3"
+            android:parentActivityName=".Menu.IntroductionActivity" />
+        <activity
+            android:name=".Lessons.Intro4"
+            android:parentActivityName=".Menu.IntroductionActivity" />
+        <activity
+            android:name=".Menu.MethodActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Menu.MethodActivity2"
+            android:parentActivityName=".Menu.Menu" />
+
+        <activity
+            android:name=".Lessons.Method1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method4"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method21"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method22"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method23"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Method24"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.RegexActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Regex1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Regex2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Regex3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Regex4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.RecursionActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Recursion1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Recursion2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Recursion3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Recursion4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+
+        <activity
+            android:name=".Menu.FSMActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.FSM1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.FSM2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.FSM3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.FSM4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.SortingActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Sorting1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Sorting2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Sorting3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Sorting4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.ClassesActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Classes1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Classes2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Classes3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Classes4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.InheritanceActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.Inheritance1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Inheritance2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Inheritance3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.Inheritance4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity
+            android:name=".Menu.TMActivity"
+            android:parentActivityName=".Menu.Menu" />
+        <activity
+            android:name=".Lessons.TM1"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.TM2"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.TM3"
+            android:parentActivityName=".Menu.MethodActivity" />
+        <activity
+            android:name=".Lessons.TM4"
+            android:parentActivityName=".Menu.MethodActivity" />
+
+        <activity android:name=".Auth.WelcomeActivity" />
+        <activity android:name=".Auth.MainActivity" />
+        <activity
+            android:name=".Auth.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,11 +197,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".Menu.Menu"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".LoginActivity"
-            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

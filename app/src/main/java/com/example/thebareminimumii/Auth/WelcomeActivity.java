@@ -1,6 +1,5 @@
-package com.example.thebareminimumii;
+package com.example.thebareminimumii.Auth;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,16 +7,11 @@ import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-
+import com.example.thebareminimumii.Menu.Menu;
+import com.example.thebareminimumii.R;
 
 
 public class WelcomeActivity extends AppCompatActivity {
@@ -25,8 +19,9 @@ public class WelcomeActivity extends AppCompatActivity {
     ImageView img1;
 
     Button b1;
+    private long clickTime = 0;
     int counter = 0;
-    private long mLastClickTime = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +43,10 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View view, MotionEvent event) {
 
-                if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
+                if (SystemClock.elapsedRealtime() - clickTime < 500) {
                     System.out.println("?");
                 } else {
-                    mLastClickTime = SystemClock.elapsedRealtime();
+                    clickTime = SystemClock.elapsedRealtime();
 
                     counter++;
                 }
@@ -89,8 +84,8 @@ public class WelcomeActivity extends AppCompatActivity {
                     b1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent Menu = new Intent(WelcomeActivity.this, Menu.class);
-                            startActivity(Menu);
+                            Intent i = new Intent(WelcomeActivity.this, Menu.class);
+                            startActivity(i);
                         }
                     });
                 }
@@ -101,6 +96,7 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-
+        Intent back = new Intent(WelcomeActivity.this, HomeActivity.class);
+        startActivity(back);
     }
 }

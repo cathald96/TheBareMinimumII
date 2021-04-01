@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    tools:context=".Menu.IntroductionActivity"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/third"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first" />
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/fourth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second" />
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/fifth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/third" />
+
+        <TextView
+            android:id="@+id/fifth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/sixth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourth" />
+
+        <TextView
+            android:id="@+id/sixth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/seventh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fifth" />
+
+
+        <TextView
+            android:id="@+id/seventh"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/eighth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sixth" />
+
+        <TextView
+            android:id="@+id/eighth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/ninth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seventh" />
+
+        <TextView
+            android:id="@+id/ninth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/tenth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eighth" />
+
+        <TextView
+            android:id="@+id/tenth"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/cousine"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@android:color/holo_purple"
+            android:textSize="12dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ninth" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

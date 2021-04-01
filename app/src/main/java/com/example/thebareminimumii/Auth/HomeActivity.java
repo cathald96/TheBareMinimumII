@@ -1,4 +1,4 @@
-package com.example.thebareminimumii;
+package com.example.thebareminimumii.Auth;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.thebareminimumii.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
@@ -33,9 +34,15 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intToMain = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intToMain = new Intent(HomeActivity.this, LoginActivity.class);
                 startActivity(intToMain);
             }
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+        Intent back = new Intent(HomeActivity.this, HomeActivity.class);
+        startActivity(back);
     }
 }

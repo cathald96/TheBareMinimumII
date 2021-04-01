@@ -1,16 +1,21 @@
-package com.example.thebareminimumii;
+package com.example.thebareminimumii.Auth;
 
+import android.app.Dialog;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.thebareminimumii.Menu.Menu;
+import com.example.thebareminimumii.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -22,7 +27,9 @@ public class LoginActivity extends AppCompatActivity {
     Button btnSignIn;
     TextView tvSignUp;
     FirebaseAuth mFirebaseAuth;
+    private Dialog loadingDialog;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +41,31 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.editText2);
         btnSignIn = findViewById(R.id.button2);
         tvSignUp = findViewById(R.id.textView);
+        loadingDialog = new Dialog(LoginActivity.this);
+        loadingDialog.setContentView(R.layout.loading_dialog);
+        loadingDialog.setCancelable(false);
+        loadingDialog.getWindow().setBackgroundDrawableResource(R.drawable.background2);
+        loadingDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        loadingDialog.show();
+
+
+        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                loadingDialog.dismiss();
+            }
+        }, 500);
+
 
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+
                 if( mFirebaseUser != null ){
                     Toast.makeText(LoginActivity.this,"You are logged in",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                    Intent i = new Intent(LoginActivity.this, Menu.class);
                     startActivity(i);
                 }
                 else{
@@ -74,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this,"Login Error, Please Login Again",Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                Intent intToHome = new Intent(LoginActivity.this,HomeActivity.class);
+                                Intent intToHome = new Intent(LoginActivity.this,Menu.class);
                                 startActivity(intToHome);
                             }
                         }
@@ -101,5 +125,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
+    }
+    @Override
+    public void onBackPressed()
+    {
+        FirebaseAuth.getInstance().signOut();
+        finishAffinity();
     }
 }

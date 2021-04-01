@@ -13,7 +13,7 @@
     android:id="@+id/View01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.thebareminimumii.WelcomeActivity">
+    tools:context="com.example.thebareminimumii.Auth.WelcomeActivity">
 
     <LinearLayout
         android:id="@+id/main_container"
@@ -25,6 +25,7 @@
 
     <TextView
         android:id="@+id/t0"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -43,6 +44,7 @@
 
     <TextView
         android:id="@+id/t1"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -58,6 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/t0" />
     <TextView
         android:id="@+id/t2"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -76,6 +79,7 @@
 
     <TextView
         android:id="@+id/t3"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -93,9 +97,10 @@
 
     <TextView
         android:id="@+id/t4"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="Here is a photo of me with the programming learning curve , As you progress through the app I hope your position on the curve progresses."
@@ -110,6 +115,7 @@
 
     <TextView
         android:id="@+id/t5"
+        android:fontFamily="@font/aldrich"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -132,7 +138,7 @@
         android:id="@+id/img1"
         android:layout_width="278dp"
         android:layout_height="532dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:padding="5dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/t4"
@@ -147,6 +153,7 @@
 
     <Button
         android:id="@+id/b1"
+        android:fontFamily="@font/aldrich"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
